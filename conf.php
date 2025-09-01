@@ -3,7 +3,7 @@
 $conf['site_timezone'] = 'Africa/Nairobi';
 
 // Site information
-$conf['site_name'] = 'ICS C';
+$conf['site_name'] = 'ICS B Academy';
 $conf['site_url'] = 'http://localhost/tol';
 $conf['admin_email'] = 'admin@icsbacademy.com';
 
