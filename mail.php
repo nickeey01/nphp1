@@ -14,7 +14,7 @@ $user_name  = $_POST['name'] ?? null;   // name entered by user
 
 // --- Validate the email address ---
 if (!$user_email || !filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
-    die("❌ Invalid email address provided.");
+    die(" Invalid email address provided.");
 }
 
 $mail = new PHPMailer(true);
@@ -51,10 +51,10 @@ try {
 
     // Send the email
     $mail->send();
-    echo "✅ Welcome email has been sent to {$user_email}";
+    echo " Welcome email has been sent to {$user_email}";
 
 } catch (Exception $e) {
-    echo "❌ Message could not be sent.<br>";
+    echo " Message could not be sent.<br>";
     echo "Error Info: " . $mail->ErrorInfo . "<br>";
     echo "Exception: " . $e->getMessage() . "<br>";
 }
